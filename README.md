@@ -1,11 +1,30 @@
-<div align="center">
+# Portfolio de Alexis Tomaselli
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Portafolio web profesional desarrollado con React, TypeScript y Tailwind CSS. Este proyecto muestra mi experiencia como Ingeniero en Sistemas y Desarrollador Full-Stack, destacando proyectos de Automatización, IA y Desarrollo Web.
 
-  <h1>Built with AI Studio</h2>
+## Tecnologías Utilizadas
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **Frontend**: React 19, TypeScript
+- **Estilos**: Tailwind CSS
+- **Iconografía**: Lucide React
+- **Arquitectura**: Single Page Application (SPA) con navegación suave.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Estructura del Proyecto
 
-</div>
+- `/components`: Componentes reutilizables (Navbar, Hero, Projects, About, Contact).
+- `/constants`: Datos estáticos (información de perfil, lista de proyectos).
+- `/types`: Definiciones de tipos TypeScript.
+
+## Instalación y Ejecución Local
+
+Este proyecto está configurado para funcionar en entornos de desarrollo modernos.
+
+1. Clonar el repositorio.
+2. Instalar dependencias (si se migra a un entorno basado en Node.js).
+3. Ejecutar el servidor de desarrollo.
+
+## Contacto
+
+- **WhatsApp**: [+54 3388 430068](https://wa.me/543388430068)
+- **LinkedIn**: [/alexistomaselli](https://linkedin.com/in/alexis-tomaselli)
+- **Email**: alexistomaselli@gmail.com
