@@ -91,3 +91,6 @@ typings/
 # dist
 dist
 dist-ssr
+
+# Python virtual environment
+.venv/
