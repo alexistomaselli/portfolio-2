@@ -14,6 +14,16 @@ const COMMON_PROFILE = {
 
 const getProjects = (lang: 'es' | 'en' | 'it'): Project[] => {
   const descriptions = {
+    ktracker: {
+      es: 'Sistema de gestión y seguimiento de proyectos en tiempo real. Monitoreo de KPIs y asignación de recursos.',
+      en: 'Real-time project management and tracking system. KPI monitoring and resource allocation.',
+      it: 'Sistema di gestione e monitoraggio progetti in tempo reale. Monitoraggio KPI e allocazione risorse.'
+    },
+    consorcio: {
+      es: 'Plataforma integral para la administración eficiente de consorcios y edificios. Gestión de expensas y comunicación.',
+      en: 'Comprehensive platform for efficient condominium and building management. Expense management and communication.',
+      it: 'Piattaforma completa per la gestione efficiente di condomini ed edifici. Gestione spese e comunicazione.'
+    },
     afpets: {
       es: 'E-commerce especializado en alimentos y accesorios para mascotas. Plataforma intuitiva para dueños de perros y gatos.',
       en: 'E-commerce specialized in pet food and accessories. Intuitive platform for dog and cat owners.',
@@ -62,6 +72,26 @@ const getProjects = (lang: 'es' | 'en' | 'it'): Project[] => {
   };
 
   return [
+    {
+      id: '11',
+      name: 'K-Tracker',
+      slug: 'k-tracker',
+      description: descriptions.ktracker[lang],
+      url: 'https://kai-pro-k-tracker.3znlkb.easypanel.host/',
+      tags: ['SaaS', 'Management', 'Dashboard'],
+      category: 'corporate',
+      imageUrl: '/images/hero-3.webp',
+    },
+    {
+      id: '10',
+      name: 'Consorcio Hub',
+      slug: 'consorcio-hub',
+      description: descriptions.consorcio[lang],
+      url: 'https://consorcio-hub-consorcio-hub-s.krpwqr.easypanel.host/',
+      tags: ['PropTech', 'Administration', 'SaaS'],
+      category: 'corporate',
+      imageUrl: '/images/hero-consorcio-hub.jpg',
+    },
     {
       id: '8',
       name: 'AFPets',
