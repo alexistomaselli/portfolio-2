@@ -6,7 +6,7 @@ const COMMON_PROFILE = {
   email: "alexistomaselli@gmail.com",
   whatsapp: "543388430068",
   linkedin: "https://www.linkedin.com/in/alexis-tomaselli",
-  avatarUrl: "/images/alexis-profile-round.png",
+  avatarUrl: "/images/alexis-profile.jpg",
 };
 
 // --- HELPER TO GENERATE PROJECTS WITH TRANSLATED TEXTS ---
