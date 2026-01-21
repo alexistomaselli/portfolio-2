@@ -77,7 +77,7 @@ const getProjects = (lang: 'es' | 'en' | 'it'): Project[] => {
       name: 'K-Tracker',
       slug: 'k-tracker',
       description: descriptions.ktracker[lang],
-      url: 'https://kai-pro-k-tracker.3znlkb.easypanel.host/',
+      url: 'https://k-tracker.kaistrategicconsulting.com/',
       tags: ['SaaS', 'Management', 'Dashboard'],
       category: 'corporate',
       imageUrl: '/images/hero-3.webp',
