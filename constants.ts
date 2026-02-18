@@ -34,21 +34,6 @@ const getProjects = (lang: 'es' | 'en' | 'it'): Project[] => {
       en: 'Claims management and vehicle appraisal platform powered by AI. Connects workshops and insurers via an intelligent dashboard.',
       it: 'Piattaforma di gestione sinistri e perizia veicoli potenziata da AI. Collega officine e assicurazioni tramite una dashboard intelligente.'
     },
-    swiss: {
-      es: 'Plataforma integral para gestión hospitalaria y presentación de servicios médicos. Optimizado para SEO y experiencia de usuario paciente.',
-      en: 'Comprehensive platform for hospital management and medical services presentation. Optimized for SEO and patient UX.',
-      it: 'Piattaforma completa per la gestione ospedaliera e la presentazione dei servizi medici. Ottimizzata per SEO e UX del paziente.'
-    },
-    dydia: {
-      es: 'Empresa especializada en automatización de procesos e integración de Inteligencia Artificial. Soluciones tecnológicas para escalar negocios.',
-      en: 'Company specialized in process automation and AI integration. Tech solutions to scale businesses.',
-      it: 'Azienda specializzata nell\'automazione dei processi e integrazione di AI. Soluzioni tecnologiche per scalare il business.'
-    },
-    vinted: {
-      es: 'Marketplace de moda de segunda mano. Implementación de carrito de compras, filtros avanzados y pasarela de pagos.',
-      en: 'Second-hand fashion marketplace. Implementation of shopping cart, advanced filters, and payment gateway.',
-      it: 'Marketplace di moda di seconda mano. Implementazione carrello, filtri avanzati e gateway di pagamento.'
-    },
     clochette: {
       es: 'Sitio web elegante para restaurante de alta cocina. Incluye sistema de reservas y galería de menú interactiva.',
       en: 'Elegant website for a fine dining restaurant. Includes reservation system and interactive menu gallery.',
@@ -64,14 +49,24 @@ const getProjects = (lang: 'es' | 'en' | 'it'): Project[] => {
       en: 'Platform for a non-profit organization, facilitating donations and global missions outreach.',
       it: 'Piattaforma per organizzazione no-profit, che facilita donazioni e diffusione delle missioni globali.'
     },
-    bomberos: {
-      es: 'Sitio institucional para el cuerpo de bomberos. Sistema de noticias, alertas y recursos para la comunidad.',
-      en: 'Institutional website for the fire department. News system, alerts, and community resources.',
-      it: 'Sito istituzionale per i vigili del fuoco. Sistema di notizie, allerte e risorse per la comunità.'
+    medical: {
+      es: 'Tema de WordPress premium diseñado para instituciones médicas. Integra gestión de turnos, portal del paciente y soporte de WooCommerce.',
+      en: 'Premium WordPress theme designed for medical institutions. Integrates appointment management, patient portal, and WooCommerce support.',
+      it: 'Tema WordPress premium progettato per istituzioni mediche. Integra gestione appuntamenti, portale del paziente e supporto WooCommerce.'
     }
   };
 
   return [
+    {
+      id: '12',
+      name: 'Medical',
+      slug: 'medical-theme',
+      description: descriptions.medical[lang],
+      url: 'https://medical.dydlabs.com/',
+      tags: ['WordPress', 'Medical', 'WooCommerce'],
+      category: 'medical',
+      imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1000&auto=format&fit=crop',
+    },
     {
       id: '11',
       name: 'K-Tracker',
@@ -113,36 +108,6 @@ const getProjects = (lang: 'es' | 'en' | 'it'): Project[] => {
       imageUrl: 'https://valora.plus/assets/hero-analytics-HCZweFY8.jpg',
     },
     {
-      id: '9',
-      name: 'Dydia Labs',
-      slug: 'dydia-labs',
-      description: descriptions.dydia[lang],
-      url: 'https://dydialabs.tech/',
-      tags: ['AI', 'Automation', 'Innovation'],
-      category: 'corporate',
-      imageUrl: 'https://dydialabs.tech/wp-content/uploads/2025/03/hero.webp',
-    },
-    {
-      id: '1',
-      name: 'Swiss Hospital',
-      slug: 'swisshospital',
-      description: descriptions.swiss[lang],
-      url: 'https://www.swisshospital.mx',
-      tags: ['React', 'Medical', 'Corporate'],
-      category: 'medical',
-      imageUrl: 'https://www.swisshospital.mx/wp-content/uploads/2023/04/swiss-home-slider-1-1024x682.jpg',
-    },
-    {
-      id: '2',
-      name: 'Vinted Clothes',
-      slug: 'vinted-clone',
-      description: descriptions.vinted[lang],
-      url: 'https://vinted.mauroferrante.website',
-      tags: ['E-commerce', 'Marketplace', 'Full Stack'],
-      category: 'e-commerce',
-      imageUrl: 'https://vinted.mauroferrante.website/wp-content/uploads/2023/05/77c49144ed9e862ef48349f4f217b48e.jpeg',
-    },
-    {
       id: '3',
       name: 'La Clochette',
       slug: 'laclochette',
@@ -154,7 +119,7 @@ const getProjects = (lang: 'es' | 'en' | 'it'): Project[] => {
     },
     {
       id: '4',
-      name: 'Ferrara Ristrutturazioni',
+      name: 'Ferrara Ristrutturaciones',
       slug: 'ferrara',
       description: descriptions.ferrara[lang],
       url: 'https://ferrararistrutturazioni.com',
@@ -172,16 +137,6 @@ const getProjects = (lang: 'es' | 'en' | 'it'): Project[] => {
       category: 'non-profit',
       imageUrl: 'https://www.emmanuelglobalmissions.org//assets/hero-divine-light-D6cvBJl1.jpg',
     },
-    {
-      id: '6',
-      name: 'Bomberos Villegas',
-      slug: 'bomberos',
-      description: descriptions.bomberos[lang],
-      url: 'https://bomberosvillegas.com.ar',
-      tags: ['Government', 'News', 'Alerts'],
-      category: 'corporate',
-      imageUrl: 'https://bomberosvillegas.com.ar/wp-content/uploads/2019/01/cuartel3-1.png',
-    },
   ];
 };
 
@@ -198,7 +153,7 @@ export const CONTENT: Record<'es' | 'en' | 'it', UIContent> = {
       role: "Ingeniero en Sistemas | Desarrollador Full-Stack",
       about: "Ingeniero en Sistemas apasionado por crear soluciones tecnológicas de alto impacto. Especializado en desarrollo Full-Stack, Automatización e Inteligencia Artificial, transformo ideas complejas en ecosistemas digitales eficientes y escalables.",
       stats: {
-        projects: "7+",
+        projects: "8+",
         projectsLabel: "Proyectos Mayores",
         commitment: "100%",
         commitmentLabel: "Compromiso"
@@ -250,7 +205,7 @@ export const CONTENT: Record<'es' | 'en' | 'it', UIContent> = {
       role: "Systems Engineer | Full-Stack Developer",
       about: "Systems Engineer passionate about creating high-impact technological solutions. Specialized in Full-Stack development, Automation, and Artificial Intelligence, I transform complex ideas into efficient and scalable digital ecosystems.",
       stats: {
-        projects: "7+",
+        projects: "8+",
         projectsLabel: "Major Projects",
         commitment: "100%",
         commitmentLabel: "Commitment"
@@ -300,9 +255,9 @@ export const CONTENT: Record<'es' | 'en' | 'it', UIContent> = {
     profile: {
       ...COMMON_PROFILE,
       role: "Ingegnere di Sistemi | Sviluppatore Full-Stack",
-      about: "Ingegnere di Sistemi appassionato nella creazione di soluzioni tecnologiche ad alto impatto. Specializzato nello sviluppo Full-Stack, Automazione e Intelligenza Artificiale, trasformo idee complesse in ecosistemi digitali efficienti e scalabili.",
+      about: "Ingegnere di Sistemi appassionato nella creación di soluzioni tecnologiche ad alto impatto. Specializzato nello sviluppo Full-Stack, Automazione e Intelligenza Artificiale, trasformo idee complesse in ecosistemi digitali efficienti e scalabili.",
       stats: {
-        projects: "7+",
+        projects: "8+",
         projectsLabel: "Progetti Principali",
         commitment: "100%",
         commitmentLabel: "Impegno"
@@ -327,7 +282,7 @@ export const CONTENT: Record<'es' | 'en' | 'it', UIContent> = {
     about: {
       title: "Su di Me",
       intro: "Come Ingegnere di Sistemi, il mio approccio combina la solidità dello sviluppo software tradizionale con l'innovazione delle nuove tecnologie. Mi specializzo nella creazione di applicazioni web robuste e nella progettazione di architetture scalabili.",
-      focus: "Attualmente, la mia carriera è fortemente incentrata sull'automazione dei processi e lo sviluppo di soluzioni con Intelligenza Artificiale. Aiuto aziende e organizzazioni a ottimizzare i flussi di lavoro, ridurre le attività ripetitive e integrare modelli AI per potenziare il processo decisionale e l'efficienza operativa.",
+      focus: "Attualmente, la mia carriera è fortemente incentrata sull'automazione dei processi e lo sviluppo di soluzioni con Inteligencia Artificiale. Aiuto aziende e organizzazioni a ottimizzare i flussi di lavoro, ridurre le attività ripetitive e integrare modelli AI per potenziare il processo decisionale e l'efficienza operativa.",
       skills: [
         { title: "AI & Automation", desc: "Integrazione LLM, n8n, Scripting Python, Chatbots" },
         { title: "Frontend Development", desc: "React, Tailwind CSS, HTML5, CSS3" },
