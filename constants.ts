@@ -53,10 +53,25 @@ const getProjects = (lang: 'es' | 'en' | 'it'): Project[] => {
       es: 'Tema de WordPress premium diseñado para instituciones médicas. Integra gestión de turnos, portal del paciente y soporte de WooCommerce.',
       en: 'Premium WordPress theme designed for medical institutions. Integrates appointment management, patient portal, and WooCommerce support.',
       it: 'Tema WordPress premium progettato per istituzioni mediche. Integra gestione appuntamenti, portale del paziente e supporto WooCommerce.'
+    },
+    emede: {
+      es: 'Sitio web corporativo para Gráfica Emede, empresa de impresión y packaging personalizado.',
+      en: 'Corporate website for Gráfica Emede, a printing and custom packaging company.',
+      it: 'Sito web aziendale per Gráfica Emede, azienda di stampa e packaging personalizzato.'
     }
   };
 
   return [
+    {
+      id: '13',
+      name: 'Gráfica Emede',
+      slug: 'emede',
+      description: descriptions.emede[lang],
+      url: 'https://emede.com.ar/',
+      tags: ['Corporate', 'Design', 'Frontend'],
+      category: 'corporate',
+      imageUrl: 'https://emede.com.ar/uploads/1770251975_banner-1.png',
+    },
     {
       id: '12',
       name: 'Medical',
